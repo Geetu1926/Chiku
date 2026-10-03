@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You, My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+  <!-- MUSIC: Put your music file in the "music" folder and name it music.mp3 -->
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="music/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicButton" class="music-button" aria-label="Play music">
+    <span id="musicIcon">♫</span>
+    <span id="musicText">Play our song</span>
+  </button>
+
+  <!-- =========================
+       PASSWORD / ENTRANCE SCREEN
+       ========================= -->
+  <section id="lockScreen" class="lock-screen">
+    <div class="hearts-bg" aria-hidden="true"></div>
+
+    <div class="lock-card">
+      <div class="lock-heart">♡</div>
+      <p class="eyebrow">A little place made just for you</p>
+      <h1>Before you enter...</h1>
+      <p class="lock-text">
+        This website contains memories, letters and a tiny piece of my heart.
+      </p>
+
+      <button id="permissionBtn" class="main-btn">I have permission ❤️</button>
+
+      <div id="passwordArea" class="password-area hidden">
+        <p class="password-hint">Only one person knows the password...</p>
+        <input id="passwordInput" type="password" placeholder="Enter the secret password">
+        <button id="unlockBtn" class="main-btn">Open my heart 💌</button>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       MAIN WEBSITE
+       ========================= -->
+  <main id="mainSite" class="hidden">
+    <div id="petalContainer" class="petal-container" aria-hidden="true"></div>
+
+    <nav class="navbar">
+      <div class="nav-logo">For You ♡</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#album">Our Memories</a>
+        <a href="#letters">Letters</a>
+        <a href="#story">Our Story</a>
+        <a href="#final">♡</a>
+      </div>
+    </nav>
+
+    <!-- HERO / ROMANTIC FRONT PAGE -->
+    <section id="home" class="hero romantic-hero">
+      <div class="floating-hearts" aria-hidden="true"></div>
+      <div class="hero-sparkle sparkle-one">✦</div><div class="hero-sparkle sparkle-two">♡</div>
+      <div class="hero-sparkle sparkle-three">✦</div><div class="hero-sparkle sparkle-four">♡</div>
+      <div class="hero-content romantic-hero-content">
+        <div class="teddy-stage">
+          <div class="teddy-glow"></div><div class="teddy">
+            <div class="ear left-ear"></div><div class="ear right-ear"></div>
+            <div class="teddy-head"><span class="teddy-eye left-eye"></span><span class="teddy-eye right-eye"></span><span class="teddy-nose"></span><span class="teddy-mouth"></span><span class="teddy-blush left-blush"></span><span class="teddy-blush right-blush"></span></div>
+            <div class="teddy-body"><div class="teddy-heart">♥</div></div><div class="teddy-arm left-arm"></div><div class="teddy-arm right-arm"></div>
+            <div class="flower-bouquet"><span class="flower f1">🌷</span><span class="flower f2">🌸</span><span class="flower f3">🌷</span><span class="flower f4">🌹</span><span class="flower f5">🌸</span><span class="bouquet-wrap">💐</span></div>
+          </div><div class="teddy-shadow"></div>
+        </div>
+        <p class="eyebrow romantic-eyebrow">Happy Boyfriend's Day Chikuuu ♡</p>
+        <h1 class="romantic-title">
+    To my favourite person
+</h1>
+
+<div class="boyfriend-collage" aria-label="A collage of my favourite photos of him">
+
+    <div class="collage-photo collage-one">
+        <img src="photos/him.jpeg" alt="A favourite photo of him">
+    </div>
+
+    <div class="collage-photo collage-two">
+        <img src="photos/him2.jpeg" alt="A favourite photo of him">
+    </div>
+
+    <div class="collage-photo collage-three">
+        <img src="photos/him3.jpeg" alt="A favourite photo of him">
+    </div>
+
+    <div class="collage-photo collage-four">
+        <img src="photos/him4.jpeg" alt="A favourite photo of him">
+    </div>
+
+    <div class="collage-photo collage-five">
+        <img src="photos/him5.jpeg" alt="A favourite photo of him">
+    </div>
+
+    <div class="collage-photo collage-six">
+        <img src="photos/him6.jpeg" alt="A favourite photo of him">
+    </div>
+
+</div>
+
+<p class="collage-caption">
+    the one who makes my heart smile ♡
+</p>
+
+<p class="romantic-subtitle">
+    on your special day...
+</p>
+        <div class="little-love-line"><span>♡</span><p id="typingMessage"></p><span class="typing-cursor">|</span><span>♡</span></div>
+        <div class="hero-note-card"><p class="hero-note-small">I made something for you...</p><p class="hero-note-big">A little corner of the internet filled with <span>us</span>. ❤️</p><p class="hero-note-sub">Our memories, my letters, little things I love about you, and a tiny piece of my heart.</p></div>
+        <div class="hero-buttons"><a href="#album" class="main-btn romantic-main-btn">Come see what I made for you ♡</a></div>
+        <div class="scroll-hint">scroll down ↓</div>
+      </div>
+    </section>
+
+    <!-- LITTLE MESSAGE -->
+    <section class="message-section section">
+      <div class="section-inner narrow">
+        <p class="eyebrow">A tiny confession</p>
+        <h2>You are the most favourite part of life.</h2>
+        <p>
+          There are so many things I could say about you, about us, and about
+          all the little moments that somehow became my favourite memories.
+          So instead of trying to fit everything into one message,
+          I made you this little world.
+        </p>
+        <div class="heart-divider">♡ · ♥ · ♡</div>
+      </div>
+    </section>
+
+    <!-- LITTLE LOVE MESSAGES -->
+    <section class="love-strip-section">
+      <div class="love-strip">
+        <span>♡ I love you</span>
+        <span>♡ You're special</span>
+        <span>♡ You deserve the best</span>
+        <span>♡ You're my favourite</span>
+        <span>♡ You're the bestest</span>
+      </div>
+    </section>
+
+    <!-- PHOTO ALBUM -->
+    <section id="album" class="album-section section">
+      <div class="section-inner">
+        <p class="eyebrow">Our little collection</p>
+        <h2>Memories I want to keep forever 📸</h2>
+        <p class="section-intro">
+          Every picture has a story. Click one to see it a little closer.
+        </p>
+
+        <div class="photo-grid">
+
+          <!--
+            PHOTO INSTRUCTIONS:
+            Replace the filenames below with your own photos.
+            Put the photos inside the "photos" folder.
+            Example: photos/date1.jpg
+          -->
+
+          <div class="memory-card" data-caption="This was such a happy day. I wish I could bottle this feeling. ❤️">
+            <img src="photos/uss5.jpeg" alt="Memory 1">
+            <div class="memory-info"><span>01</span><p>One of my favourite days ♡</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="Just us being us — and honestly, that's enough.">
+            <img src="photos/uss2.jpeg" alt="Memory 2">
+            <div class="memory-info"><span>02</span><p>Just us ♡</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="I remember this moment and immediately smile.">
+            <img src="photos/us.jpeg" alt="Memory 3">
+            <div class="memory-info"><span>03</span><p>A moment I'll remember</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="Another little piece of our story.">
+            <img src="photos/uss8.jpeg" alt="Memory 4">
+            <div class="memory-info"><span>04</span><p>Our little story</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="You make ordinary days feel special.">
+            <img src="photos/uss6.jpeg" alt="Memory 5">
+            <div class="memory-info"><span>05</span><p>An ordinary day, made special</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="If I could go back to one of these moments, I'd happily relive it.">
+            <img src="photos/uss3.jpeg" alt="Memory 6">
+            <div class="memory-info"><span>06</span><p>Take me back ♡</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="A picture, a memory, and a thousand feelings.">
+            <img src="photos/uss7.jpeg" alt="Memory 7">
+            <div class="memory-info"><span>07</span><p>A thousand feelings</p></div>
+          </div>
+
+          <div class="memory-card" data-caption="My favourite kind of picture: one with you in it.">
+            <img src="photos/uss4.jpeg" alt="Memory 8">
+            <div class="memory-info"><span>08</span><p>My favourite kind of picture</p></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="tiny-note-section">
+      <div class="tiny-note">
+        <span class="tiny-heart">♥</span>
+        <p>Just a reminder, in case nobody told you today:</p>
+        <h3>You are loved. You are special. You deserve the absolute best.</h3>
+      </div>
+    </section>
+
+    <!-- LETTERS -->
+    <section id="letters" class="letters-section section">
+      <div class="section-inner">
+        <p class="eyebrow">Open one whenever you want</p>
+        <h2>Letters for you 💌</h2>
+        <p class="section-intro">Some things deserve their own little envelope.</p>
+
+        <div class="letter-grid">
+
+          <!--
+            LETTER INSTRUCTIONS:
+            Replace the text inside each .letter-body with your own letter.
+            You can add more letter cards by copying one entire .letter-card.
+          -->
+
+          <div class="letter-card">
+            <button class="envelope" aria-label="Open letter">
+              <span class="envelope-top"></span>
+              <span class="envelope-paper">💌</span>
+              <span class="envelope-label">Open me</span>
+            </button>
+            <h3>For Boyfriend's Day</h3>
+            <div class="letter-body">
+              <p>Chikuuu,</p>
+              <p>
+                Happy Boyfriend's Day. I loveeee you the most and miss you a lott too.
+                You are the best boyfriend one can have, although there are some differences between us and our biggest enemy is this long distance
+                but still I am really very grateful to have you in my life.
+              </p>
+              <p>
+                Thank you for all the little things, all the laughs, and all the memories we've made. I LOVE YOU SO SO SO SOOOOO 
+                MUCHHHH !!! You're the bestttttttt!!!
+                .
+              </p>
+              <p>I'm really lucky to have you. ❤️</p>
+              <p class="signature">Yours Unnati, always ♡</p>
+            </div>
+          </div>
+
+          <div class="letter-card">
+            <button class="envelope" aria-label="Open letter">
+              <span class="envelope-top"></span>
+              <span class="envelope-paper">💌</span>
+              <span class="envelope-label">Open me</span>
+            </button>
+            <h3>Open when you miss me</h3>
+            <div class="letter-body">
+              <p>Hey Chikuuu,</p>
+              <p>
+                 If you're reading this because you miss me, just know that
+                somewhere I'm probably missing you too, even more than you. I wish I could just come out from this 
+                screen and give you a tight hug, you deserve all the love, smile, hugs, kisses, and everything which brings joy to you.
+                I know you are missing me(which is rare) but don't forget I am here, I am your's today and always, just a call away.
+                I love you and you mean the world to me, our routine night call is the bestest part of my day jo ab agar ni hoti to I couldn't 
+                even sleep peacefully. Hopefully jld hi our calls and msgs will convert into talking hugging kissing cuddling doing everything while being 
+                present with each other physically.
+              </p>
+              <p>
+                Tb tak k liye, just imagine me giving you the biggest hug I lovee youu a lott mera bacchaa.....
+              </p>
+              <p class="signature">I miss you a lot too. ♡</p>
+            </div>
+          </div>
+
+          <div class="letter-card">
+            <button class="envelope" aria-label="Open letter">
+              <span class="envelope-top"></span>
+              <span class="envelope-paper">💌</span>
+              <span class="envelope-label">Open me</span>
+            </button>
+            <h3>Open when you need a smile</h3>
+            <div class="letter-body">
+              <p>Heelllooo Patikuuu,</p>
+              <p>
+                Here's your reminder that you are loved, appreciated and
+                ridiculously special to me. You make my heart smile whensoever it goes in sorrow
+                you help me overcome my fears , you protect me from all the evil eyes, 
+                you make sure that every moment we spend together I've my smile intact, 
+                you giveup on your desires just for my smile , my comfort , you're the best boyfriend , bestfriend, partner
+                I could ever ask for , I'm blessed to have you in my life ,do not ever underestimate yourself , you mean aloottt to me !!
+                you are a veryy amazing person who seek happiness in smallest of the things so you deserve all the 
+                happiness of this world my babyyy...keep smiling
+              </p>
+              <p>
+                Now smile. Yes, I'm serious. That's an order. 😌❤️...... Gooooddd boiiiiii !!!!
+              </p>
+              <p class="signature">Your biggest fan ♡</p>
+            </div>
+          </div>
+
+          <div class="letter-card">
+            <button class="envelope" aria-label="Open letter">
+              <span class="envelope-top"></span>
+              <span class="envelope-paper">💌</span>
+              <span class="envelope-label">Open me</span>
+            </button>
+            <h3>Things I love about you</h3>
+            <div class="letter-body">
+              <p>Where do I even begin?</p>
+              <p>
+                I love the way you talk.<br>
+                I love the way you always be yourself.<br>
+                I love the way you laugh your heart out.<br>
+                I love the way you look at me.<br>
+                I love when you act like a kid.<br>
+                I love when you smile.<br>
+                I love how you handle things.<br>
+                I love that you always love me no matter what the situation is .
+              </p>
+              <p>
+                And somehow, the list keeps getting longer.
+              </p>
+              <p class="signature">I love you. ♡</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY / TIMELINE -->
+    <section id="story" class="story-section section">
+      <div class="section-inner">
+        <p class="eyebrow">Us, in little chapters</p>
+        <h2>Our Story ♡</h2>
+
+        <!-- CHANGE THESE DATES AND TEXTS -->
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot">♡</div>
+            <div class="timeline-content">
+              <span class="timeline-date">THE BEGINNING</span>
+              <h3>When it all started ~ 03.09.2024</h3>
+              <p>The day we met for the very first time. You were looking very handsome and bold as well. Not only you but I was also noticing you
+                and then you came to ask for the water bottle "bottle dena😂" aur meri bottle khali thi still I gave it to you
+                Later there was a request in my instagram and somewhere I knew that it was you and everything started then, there was something very comfortable
+                between us, it didn't ever feel like we met in college itself.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">♡</div>
+            <div class="timeline-content">
+              <span class="timeline-date">A SPECIAL DAY</span>
+              <h3>A memory I never want to forget ~ 10.09.24</h3>
+              <p> Ganesh Chaturthi!
+                The day we met in the college, just the two of us. You clicked my photos and I was continuously blushing and laughing.
+                And then jab canteen ke saamne aapne meri kamar pe haath rkkha tha while going back towards the pandal MYY GODD the boldest move it was.
+                Aur aakhri me wo auto ride when you wanted to hold my hand and i was refusing but at the end I gave my hand in yours coz I didn't want to
+                break your heart.
+                It was one of the bestest day for me.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">♡</div>
+            <div class="timeline-content">
+              <span class="timeline-date">TODAY</span>
+              <h3>The DAY ~ 15.09.24 </h3>
+              <p>The day we became us. I accepted your proposal and we started our happily ever after.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">∞</div>
+            <div class="timeline-content">
+              <span class="timeline-date">THE FUTURE</span>
+              <h3>And here we are.....</h3>
+              <p>03.10.26 we have completed 2 years and a month of knowing each other and 2 years and 18 days of dating
+                Lot's of good and bad things happened between us and still we never gave up on each other.
+                May we always love, respect and actually care for each other.
+                May we stay together always and forever and never give up on each other.
+                I loveeee u today and always!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LITTLE THINGS -->
+    <section class="things-section section">
+      <div class="section-inner narrow">
+        <p class="eyebrow">A few tiny things</p>
+        <h2>Reasons you are special to me</h2>
+
+        <div class="reasons">
+          <div>♡ Your smile</div>
+          <div>♡ The way you protect me</div>
+          <div>♡ Our stupid conversations</div>
+          <div>♡ The comfort of being with you</div>
+          <div>♡ The memories we've made</div>
+          <div>♡ Simply... you</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIDDEN SURPRISE -->
+    <section class="secret-section section">
+      <div class="section-inner narrow">
+        <p class="eyebrow">Psst... one more thing</p>
+        <h2>Did you find the secret? 👀</h2>
+        <p class="section-intro">There is one tiny message hidden here for you.</p>
+        <button id="secretButton" class="main-btn">Unlock it ❤️</button>
+        <div id="secretMessage" class="secret-message hidden">
+          <div class="secret-stars">✦ ♡ ✦</div>
+          <p>Out of all the people in this world...</p>
+          <h3>I would still want you.</h3>
+          <p>Today, tomorrow, and in every little version of our story.</p>
+          <div class="secret-stars">♡ ✦ ♡</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section id="final" class="final-section section">
+      <div class="final-card">
+        <div class="final-heart">♥</div>
+        <p class="eyebrow">One last thing...</p>
+        <h2>If I had to choose again,</h2>
+        <h3>I'd still choose you.</h3>
+
+        <!-- CHANGE THIS PHOTO -->
+        <img src="photos\uss1.jpeg" alt="Our photo" class="final-photo">
+
+        <p class="final-message">
+          Thank you for being a part of my life, for being you,
+          and for becoming such a beautiful part of my story.
+        </p>
+
+        <p class="big-love">I love you. ♡</p>
+        <p class="small-note">Happy Boyfriend's Day ❤️</p>
+      </div>
+    </section>
+
+    <footer>
+      Made with way too much love, just for you ♡
+    </footer>
+  </main>
+
+  <!-- PHOTO LIGHTBOX -->
+  <div id="lightbox" class="lightbox hidden">
+    <button id="closeLightbox" class="close-btn">×</button>
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="Enlarged memory">
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
